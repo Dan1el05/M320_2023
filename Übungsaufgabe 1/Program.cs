@@ -17,7 +17,7 @@ namespace Übungsaufgabe_1
                 
                 Console.WriteLine("1. ggt berechnen");
                 Console.WriteLine("2. kgv berechnen");
-                Console.WriteLine("3. kgt rekrusiv berechnen");
+                Console.WriteLine("3. kgv rekrusiv berechnen");
                 Console.WriteLine("4. Arithmetischer Mittelwert kleinster Wert grösster Wert ausrechnen ");
                 Console.WriteLine("5. Variabeln vertauschen");
                 Console.WriteLine("6. Inhalt eines Array vertauschen");
@@ -45,12 +45,12 @@ namespace Übungsaufgabe_1
                     int a = MyMath.ReadInt("Geben Sie die erste Zahl ein: ");
                     int b = MyMath.ReadInt("Geben Sie die zweite Zahl ein: ");
                     int lcm = MyMath.Calc_ggT_r(a, b);
-                    MyMath.ShowResult("KgV", a, b, lcm);
+                    MyMath.ShowResult("KgV_r", a, b, lcm);
                     Console.WriteLine("");
                 }
                 else if (choice == 4)
                 {
-                    int count = MyMath.ReadInt("Geben Sie die Anzahl der Zahlen ein: ");
+                    int count = MyMath.ReadInt("Geben Sie die Anzahl der Zahlen für das Array ein: ");
                     int[] numbers = MyMath.ReadNumber(count);
 
                     double mean = MyMath.CalculateMean(numbers);
